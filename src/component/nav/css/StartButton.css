@@ -1,0 +1,32 @@
+:root {
+    --gray: rgb(128, 128, 128)
+}
+
+.btn-box {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.btn-box a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid var(--gray);
+    padding: 12px 15px;
+    cursor: pointer;
+    animation: btn-move 2s infinite;
+}
+
+.btn-box a:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: var(--gray) ;
+}
+
+@keyframes btn-move {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+}
